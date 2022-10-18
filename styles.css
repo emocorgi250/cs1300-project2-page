@@ -1,0 +1,336 @@
+body{
+  padding:0px;
+  margin-top: 1px;
+  margin-bottom: 20px;
+  background-image: url("./assets/background.jpeg");
+  background-size: 100% auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+}
+
+.dropdown {
+  display: none;
+}
+
+.pc_nav {
+  margin-top: 0px;
+  width: auto;
+  height:50px;
+  line-height:50px;
+  text-align: center;
+  position: fixed;
+  left:0;
+  right:0;
+  z-index:99; 
+  background:#6cd271;
+  border-radius:0 0 15px 15px; 
+}         
+.pc_nav ul {
+  list-style: none;
+  text-align: center;
+  margin:0;
+  padding:0;
+}           
+.pc_nav li {
+  display: inline-block;            
+}   
+
+.pc_nav a:link, .pc_nav a:visited {
+  margin-right: 15px;
+  padding: 5px 15px 5px 15px;
+  color: #ffffff;
+  background-color: #54a258;
+  text-decoration: none;
+  border-top: 3px solid #d4cece;
+  border-left: 3px solid #d4cece;
+  border-bottom: 3px solid #81a089;
+  border-right: 3px solid #81a089;
+}
+  
+.pc_nav a:hover, #l1{ 
+  background-color: #04270c;
+  border-top: 3px solid #81a089;
+  border-left: 3px solid #81a089;
+  border-bottom: 3px solid #d4cece;
+  border-right: 3px solid #d4cece;
+}
+
+
+.content {
+  padding-top: 30px;
+}
+
+.site-title {
+  letter-spacing: 1px;
+  font-family: Josefin Sans;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 120px;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1em;
+  color: #54a258;
+  margin: 0 0 20px ;
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+}
+
+.site-tagline {
+  font-family: Georgia,serif;
+  text-transform: none;
+  letter-spacing: 0px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  text-decoration: none;
+  text-align: left;
+  color: rgba(230, 143, 37, 0.8);
+  margin: 7px 0 20px;
+}
+
+.tagline2 {
+  font-family: Georgia,serif;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  text-decoration: none;
+  color: black;
+  margin: 7px 0 20px;
+}
+
+/*
+#preparation {
+  background-color: rgb(236, 126, 126);
+}
+*/
+
+#ipad {
+  display: none;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 60px;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  .food {
+      vertical-align: middle;
+      width: 75%;
+      margin-right: 2%;
+  }
+
+  .words {
+    vertical-align: middle;
+    width: 100%;
+    padding: 20px 0;
+    margin-left: 2%;
+  }
+
+  .site-intro{
+    text-align: left;
+    font-size:24px; 
+    color:white; 
+    line-height:150%; 
+  }
+
+  .address{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 30px;
+    border: solid 15px #176335;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+
+.gallery-item-container {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.contact{
+  font-size:24px; 
+  color:black; 
+  font-weight: 600; 
+  line-height:200%; 
+  text-align: center;
+}
+
+@media screen and (max-width: 825px){
+  #ipad {
+    padding-top: 50px;
+    display: inline-block;
+  }
+  #pc{
+    display: none;
+  }
+
+  .site-title {
+    letter-spacing: 1px;
+    font-family: Josefin Sans;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 90px;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1em;
+    color: #54a258;
+    margin: 0 0 20px ;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .wrap {
+    padding-top: 0px;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
+
+@media screen and (max-width: 640px) {
+  .pc_nav{
+    display: none;
+  }
+
+  .dropbtn {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    
+  }
+
+.dropdown {
+    display: inline-block;
+    width:max-content;
+    position: fixed;
+    left:0;
+    right:0;
+    z-index:99; 
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3e8e41;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #184a19}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn, #a1 {
+    background-color: #184a19;
+}
+
+#ipad {
+  display: none;
+}
+#pc{
+  display: inline-block;
+}
+
+.site-title {
+  letter-spacing: 1px;
+  font-family: Josefin Sans;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 60px;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1em;
+  color: #54a258;
+  margin: 0 0 20px ;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+.site-tagline{
+  font-weight: 300;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: .1em;
+}
+
+.wrap {
+  margin-top: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.food {
+  vertical-align: middle;
+  width: 0%;
+  margin-right: 0%;
+}
+
+.words{
+  align-items: center;
+}
+
+.site-intro{
+  text-align: center;
+  font-size:20px; 
+  color:white; 
+  line-height:150%; 
+}
+
+.tagline2{
+  padding-top: 10px;
+  font-size: 20px;
+  letter-spacing: .05em;
+}
+
+.contact{
+  font-size:18px; 
+  color:black; 
+  font-weight: 400; 
+  line-height:120%; 
+  text-align: center;
+}
+
+
+
+}
